@@ -1,8 +1,17 @@
 import React from 'react'
 
-function Overview() {
+function Overview({event}) {
   return (
-    <div>Overview</div>
+    <div>
+        <div>
+          <h1>{event.platform}</h1>
+          <h2>{event.type}</h2>
+          <h2>{event.amount}</h2>
+          <p>{event.modifier}</p>
+        </div>
+
+
+      </div>
   )
 }
 

@@ -16,9 +16,12 @@ function App() {
       ))} */}
 
       {data.platforms.map((platform, i) => (
-        <Social platform={platform}/>
+        <Social platform={platform} key={i}/>
       ))}
-     <Overview/>
+      {data.events.map((event, i) => (
+        <Overview event={event} key={i}/>
+      ))   
+      }
     </div>
   );
 }
