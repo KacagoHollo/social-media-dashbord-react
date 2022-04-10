@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Social from './components/Social';
 import Overview from './components/Overview';
 
@@ -7,28 +7,28 @@ import data from './data/sample-data'
 
 function App() {
 
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState("dark")
 
   const toggleFunc = () => {
-    setToggle(true)
+    setToggle(toggle === "dark" ? "light" : "dark")
   }
 
   const sumTotal = data.platforms.map((platform) => (
     Object.values(platform).reduce((total, item) => {
-     return total + item.followers
+     return total + parseInt(item.followers) 
     }, 0)
      ))
  
   return (
-    <div className="App">
+    <div className={toggle}>
       <header>
         <div className='title'>
           <h1>Social Media Dashboard</h1>
           <h2>Total followers: {sumTotal}</h2>
         </div>
         <div className='theme'>
-          <p>Dark Mode</p>
-          <button className={"circle"} onClick={toggleFunc}></button>
+          <p>{toggle === "dark" ? "Dark Mode" : "Light Mode"}</p>
+          <button className={toggle} onClick={toggleFunc}></button>
         </div>
       </header>
 
