@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+    text-decoration: none;
+  }
+  
+  ol,
+  ul,
+  li {
+    list-style: none;
+    display: block;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  a,
+  img {
+    border: none;
+  }
+  
+  button,
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button,
+  input,
+  textarea,
+  select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    /* safari, opera, chrome miatt */
+    border-radius: 0;
+  }
+  
+  /* CSS reset */
+
+  .dark {
+    background-color: #20222f;
+  }
+
+  .light {
+    background-color: rgb(244, 237, 237);
+  }
+
+  body {
+
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    
+    overflow: hidden;
+
+      header {
+    
+        width: 80vw;
+        height: 150px;
+    
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+  
+        
+        div.title {
+            display: flex;
+            // flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    
+        div.theme {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            align-items: center;
+    
+            button {
+      
+                width: 100px;
+                height: 40px;
+      
+                background-color: #3cbca9;
+                border-radius: 50px;
+            }
+        }
+      }
+
+      div.main-one {
+        width: 80vw;
+        height: 30vh;
+        
+        display: flex;
+        justify-content: center;
+        
+          div.social {
+            display: inline-flex;
+            justify-content: center;
+    
+            width: 15vw;
+          }
+      }
+
+      div.main-two {
+        width: 80vw;
+        height: 30vh;
+        
+        display: flex;
+
+        div.over {
+            display: flex;
+            // justify-content: center;
+            width: 15vw;
+          }
+      }
+
+  }

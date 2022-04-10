@@ -2,7 +2,7 @@ import React from 'react'
 
 function Overview({event}) {
   return (
-    <div>
+    <div className='over'>
         <div>
           <h1>{event.platform}</h1>
           <h2>{event.type}</h2>

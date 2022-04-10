@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 function Social({platform}) {
   return (
-      <div>
+      <div className='social'>
         {Object.values(platform).map((profile, i) => (
           <div key={i}>
             <h2>{profile.name}</h2>
@@ -10,7 +10,7 @@ function Social({platform}) {
             <h3>{profile.difference}</h3>
           </div>
         ))}
-    </div>
+      </div>
   )
 }
 
