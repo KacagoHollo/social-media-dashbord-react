@@ -9,9 +9,7 @@ function Overview({event}) {
           <h2>{event.amount}</h2>
           <p>{event.modifier}</p>
         </div>
-
-
-      </div>
+    </div>
   )
 }
 
