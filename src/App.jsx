@@ -13,11 +13,19 @@ function App() {
     setToggle(toggle === "dark" ? "light" : "dark")
   }
 
-  const sumTotal = data.platforms.map((platform) => (
-    Object.values(platform).reduce((total, item) => {
-     return total + parseInt(item.followers) 
-    }, 0)
-     ))
+  // Old solution, numbers get after each other without adding
+
+  // const sumTotal = data.platforms.map((platform) => (
+  //   Object.values(platform).reduce((total, item) => {
+  //    return total + parseInt(item.followers) 
+  //   }, 0)
+  //    ))
+
+  const sumTotal = data.platforms.reduce((sum, platform) => {
+    // console.log(Object.values(platform)[0].followers);
+    return sum + Object.values(platform)[0].followers
+
+  }, 0) 
  
   return (
     <div className={toggle}>
