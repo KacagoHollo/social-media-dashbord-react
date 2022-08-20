@@ -48,33 +48,43 @@
   
   /* CSS reset */
 
-  body {
-    
+
+  div.dark {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    
+
     overflow: hidden;
 
     background-color: #20222f;
     color: rgb(244, 237, 237);
 
+  }
 
-      .dark {
-        background-color: #20222f;
-        color: rgb(244, 237, 237);
+  div.light {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 
-      }
-    
-      .light {
-        background-color: rgb(244, 237, 237);
-        color: #20222f;
-      }
+    overflow: hidden;
 
+    background-color: rgb(244, 237, 237);
+    color: #20222f;
+  }
+  
 
+  body {
+  
       header {
         position: absolute;
+        top: 0;
+        // left: 0;
         width: 80vw;
         height: 150px;
     
@@ -114,9 +124,12 @@
         
         display: flex;
         justify-content: center;
+        gap: 10px;
         
           div.social {
-            display: inline-flex;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
     
             width: 15vw;
@@ -128,12 +141,17 @@
         height: 30vh;
         
         display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
 
         div.over {
-            display: flex;
-            // justify-content: center;
-            width: 15vw;
-          }
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          width: 15vw;
+        }
       }
 
   }

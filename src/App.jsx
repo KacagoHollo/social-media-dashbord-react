@@ -7,22 +7,14 @@ import data from './data/sample-data'
 
 function App() {
 
-  const [toggle, setToggle] = useState("dark")
+  const [toggle, setToggle] = useState("dark");
 
   const toggleFunc = () => {
     setToggle(toggle === "dark" ? "light" : "dark")
   }
 
-  // Old solution, numbers get after each other without adding
-
-  // const sumTotal = data.platforms.map((platform) => (
-  //   Object.values(platform).reduce((total, item) => {
-  //    return total + parseInt(item.followers) 
-  //   }, 0)
-  //    ))
-
   const sumTotal = data.platforms.reduce((sum, platform) => {
-    // console.log(Object.values(platform)[0].followers);
+
     return sum + Object.values(platform)[0].followers
 
   }, 0) 
@@ -42,12 +34,12 @@ function App() {
 
       <div className='main-one'>
         {data.platforms.map((platform, i) => (
-            <Social platform={platform} key={i}/>
+              <Social platform={platform} key={i}/>
             ))}
       </div>
       <div className='main-two'>
       {data.events.map((event, i) => (
-        <Overview event={event} key={i}/>
+          <Overview event={event} key={i}/>
       ))   
       }
       </div>
