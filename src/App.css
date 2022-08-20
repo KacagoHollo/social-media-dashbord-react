@@ -70,6 +70,14 @@ div.dark {
   color: #f4eded;
 }
 
+div.dark div.social {
+  background-color: #252b43;
+}
+
+div.dark div.over {
+  background-color: #252b43;
+}
+
 div.light {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,6 +97,14 @@ div.light {
   overflow: hidden;
   background-color: #f4eded;
   color: #20222f;
+}
+
+div.light div.social {
+  background-color: #dbd4d4;
+}
+
+div.light div.over {
+  background-color: #dbd4d4;
 }
 
 body header {
@@ -137,22 +153,31 @@ body header div.theme {
 }
 
 body header div.theme button {
-  width: 100px;
-  height: 40px;
+  width: 60px;
+  height: 30px;
   background-color: #3cbca9;
   border-radius: 50px;
 }
 
+body header div.theme button div.orb {
+  width: 25px;
+  height: 25px;
+  background-color: #20222f;
+  border-radius: 50%;
+}
+
 body div.main-one {
   width: 80vw;
-  height: 30vh;
+  height: 25vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
 }
 
 body div.main-one div.social {
@@ -169,18 +194,21 @@ body div.main-one div.social {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 15vw;
+  width: 18vw;
 }
 
 body div.main-two {
   width: 80vw;
-  height: 30vh;
+  height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 body div.main-two div.over {
@@ -197,6 +225,6 @@ body div.main-two div.over {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 15vw;
+  width: 18vw;
 }
 /*# sourceMappingURL=App.css.map */

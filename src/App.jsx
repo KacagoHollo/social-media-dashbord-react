@@ -28,7 +28,10 @@ function App() {
         </div>
         <div className='theme'>
           <p>{toggle === "dark" ? "Dark Mode" : "Light Mode"}</p>
-          <button className={toggle} onClick={toggleFunc}></button>
+          <button className={toggle} onClick={toggleFunc}>
+            <div className='orb'></div>
+
+          </button>
         </div>
       </header>
 
@@ -37,11 +40,14 @@ function App() {
               <Social platform={platform} key={i}/>
             ))}
       </div>
-      <div className='main-two'>
-      {data.events.map((event, i) => (
-          <Overview event={event} key={i}/>
-      ))   
-      }
+      <div className='overview'>
+        <h2>Overview - Today</h2>
+        <div className='main-two'>
+        {data.events.map((event, i) => (
+            <Overview event={event} key={i}/>
+        ))   
+        }
+        </div>
       </div>
     </div>
   );

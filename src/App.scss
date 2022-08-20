@@ -60,8 +60,14 @@
     overflow: hidden;
 
     background-color: #20222f;
-    color: rgb(244, 237, 237);
+    color: rgb(244, 237, 237);   
 
+    div.social {
+      background-color: #252b43;
+    }
+    div.over {
+      background-color: #252b43;
+    }
   }
 
   div.light {
@@ -76,11 +82,17 @@
 
     background-color: rgb(244, 237, 237);
     color: #20222f;
+
+    div.social {
+      background-color: rgb(219, 212, 212);
+    }
+    div.over {
+      background-color: rgb(219, 212, 212);
+    }
   }
   
 
   body {
-  
       header {
         position: absolute;
         top: 0;
@@ -109,40 +121,56 @@
     
             button {
       
-                width: 100px;
-                height: 40px;
+                width: 60px;
+                height: 30px;
       
                 background-color: #3cbca9;
                 border-radius: 50px;
+
+                div.orb {
+
+                  width: 25px;
+                  height: 25px;
+
+                  background-color: #20222f;
+                  border-radius: 50%;
+                }
             }
         }
       }
 
       div.main-one {
         width: 80vw;
-        height: 30vh;
+        height: 25vh;
         
         display: flex;
-        justify-content: center;
-        gap: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
         
-          div.social {
+        div.social {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
     
-            width: 15vw;
+            width: 18vw;
+            
           }
       }
 
       div.main-two {
         width: 80vw;
-        height: 30vh;
+        height: 20vh;
         
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 20px;
+
+        // h2 {
+        //   position: absolute;
+        // }
 
         div.over {
           display: flex;
@@ -150,7 +178,7 @@
           align-items: center;
           justify-content: center;
 
-          width: 15vw;
+          width: 18vw;
         }
       }
 
