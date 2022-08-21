@@ -120,14 +120,33 @@
             align-items: center;
     
             button {
-      
+                position: relative;
                 width: 60px;
-                height: 30px;
+                height: 31px;
+
+                margin-left: 10px;
       
                 background-color: #3cbca9;
                 border-radius: 50px;
 
-                div.orb {
+                div.left {
+                  position: absolute;
+                  top: 3px;
+                  left: 3px;
+
+                  width: 25px;
+                  height: 25px;
+
+                  background-color: #20222f;
+                  border-radius: 50%;
+                }
+
+                div.right {
+                  position: absolute;
+                  top: 3px;
+                  right: 3px;
+
+                  margin-right: 3px;
 
                   width: 25px;
                   height: 25px;

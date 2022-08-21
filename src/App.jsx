@@ -8,9 +8,11 @@ import data from './data/sample-data'
 function App() {
 
   const [toggle, setToggle] = useState("dark");
+  const [orb, setOrb] = useState("left");
 
   const toggleFunc = () => {
-    setToggle(toggle === "dark" ? "light" : "dark")
+    setToggle(toggle === "dark" ? "light" : "dark");
+    setOrb(orb === "left" ? "right" : "left")
   }
 
   const sumTotal = data.platforms.reduce((sum, platform) => {
@@ -29,7 +31,7 @@ function App() {
         <div className='theme'>
           <p>{toggle === "dark" ? "Dark Mode" : "Light Mode"}</p>
           <button className={toggle} onClick={toggleFunc}>
-            <div className='orb'></div>
+            <div className={orb}></div>
 
           </button>
         </div>
