@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Mukta+Mahee:wght@700&display=swap');
 
 * {
     margin: 0;
@@ -86,10 +86,10 @@
     color: #20222f;
 
     div.social {
-      background-color: rgb(219, 212, 212);
+      background-color: rgb(234, 224, 224);
     }
     div.over {
-      background-color: rgb(219, 212, 212);
+      background-color: rgb(234, 224, 224);
     }
   }
   
@@ -195,42 +195,66 @@
             
             h2 {
               font-size: 14px;
-              font-weight: 300;
+              font-weight: 400;
               color: #898fb3;
             }
             h1:nth-child(2) {
-              font-size: 50px;
+              height: 80px;
+              font-size: 60px;
+              font-family: 'Mukta Mahee', sans-serif;
               font-weight: 700;
+              // letter-spacing: 0.1em;
             }
             h1:nth-child(3) {
               font-weight: 300;
-              font-size: 16px;
+              font-size: 15px;
               color: #898fb3;
+
+              letter-spacing: 0.2em;
+            }
+            h3 {
+              margin-top: 20px;
+              font-size: 15px;
+            }
+
+            h3.green {
+              color: #46938c;
+            }
+            h3.red {
+              color: #b0455c;
             }
           }
       }
-
-      div.main-two {
-        width: 80vw;
-        height: 20vh;
+      div.overview {
+        margin-top: 50px;
         
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 20px;
-
-        // h2 {
-        //   position: absolute;
-        // }
-
-        div.over {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-
-          width: 18vw;
+        h2 {
+          margin-bottom: 20px;
         }
+
+        div.main-two {
+          width: 80vw;
+          height: 20vh;
+          
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 20px;
+  
+          // h2 {
+          //   position: absolute;
+          // }
+  
+          div.over {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+  
+            width: 18vw;
+          }
+        }
+
       }
 
   }

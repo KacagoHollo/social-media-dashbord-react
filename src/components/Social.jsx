@@ -10,7 +10,7 @@ function Social({platform}) {
             <h2>{platName === "youtube" ? profile.name : "@" + profile.name}</h2>
             <h1>{profile.followers}</h1>
             <h1>{platName === "youtube" ? "SUBSCRIBERS" : "FOLLOWERS"}</h1>
-            <h3>{profile.difference} Today</h3>
+            <h3 className={profile.difference > 0 ? "green" : "red"}>{profile.difference} Today</h3>
           </div>
         ))}
       </>
