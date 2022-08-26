@@ -216,6 +216,7 @@ body div.main-one {
 }
 
 body div.main-one div.social {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,6 +231,33 @@ body div.main-one div.social {
       -ms-flex-pack: center;
           justify-content: center;
   width: 18vw;
+  border-radius: 8px;
+}
+
+body div.main-one div.social .twitter, body div.main-one div.social .facebook, body div.main-one div.social .instagram, body div.main-one div.social .youtube {
+  position: absolute;
+  top: 0;
+  height: 5px;
+  width: 18vw;
+}
+
+body div.main-one div.social .facebook {
+  background-color: #1a8ef1;
+}
+
+body div.main-one div.social .twitter {
+  background-color: #1ea1ef;
+}
+
+body div.main-one div.social .instagram {
+  background: #feda75;
+  background: -webkit-gradient(linear, left top, right top, from(#feda75), color-stop(60%, #fa7e1e), to(#d62976));
+  background: linear-gradient(90deg, #feda75 0%, #fa7e1e 60%, #d62976 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#feda75",endColorstr="#d62976",GradientType=1);
+}
+
+body div.main-one div.social .youtube {
+  background-color: #bd052a;
 }
 
 body div.main-one div.social h2 {
@@ -238,14 +266,14 @@ body div.main-one div.social h2 {
   color: #898fb3;
 }
 
-body div.main-one div.social h1:nth-child(2) {
+body div.main-one div.social h1:nth-child(3) {
   height: 80px;
   font-size: 60px;
   font-family: 'Mukta Mahee', sans-serif;
   font-weight: 700;
 }
 
-body div.main-one div.social h1:nth-child(3) {
+body div.main-one div.social h1:nth-child(4) {
   font-weight: 300;
   font-size: 15px;
   color: #898fb3;
@@ -302,5 +330,6 @@ body div.overview div.main-two div.over {
       -ms-flex-pack: center;
           justify-content: center;
   width: 18vw;
+  border-radius: 8px;
 }
 /*# sourceMappingURL=App.css.map */

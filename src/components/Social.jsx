@@ -7,6 +7,7 @@ function Social({platform}) {
       <>
         {Object.values(platform).map((profile, i) => (
           <div className='social' key={i}>
+            <div className={platName}></div>
             <h2>{platName === "youtube" ? profile.name : "@" + profile.name}</h2>
             <h1>{profile.followers}</h1>
             <h1>{platName === "youtube" ? "SUBSCRIBERS" : "FOLLOWERS"}</h1>
