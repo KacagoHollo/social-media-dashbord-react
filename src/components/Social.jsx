@@ -9,7 +9,7 @@ function Social({platform}) {
           <div className='social' key={i}>
             <h2>{platName === "youtube" ? profile.name : "@" + profile.name}</h2>
             <h1>{profile.followers}</h1>
-            <h1>FOLLOWERS</h1>
+            <h1>{platName === "youtube" ? "SUBSCRIBERS" : "FOLLOWERS"}</h1>
             <h3>{profile.difference} Today</h3>
           </div>
         ))}

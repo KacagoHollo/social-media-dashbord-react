@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -107,11 +108,16 @@ div.light div.over {
   background-color: #dbd4d4;
 }
 
+body {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+}
+
 body header {
   position: absolute;
-  top: 0;
+  top: 80px;
   width: 80vw;
-  height: 150px;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,6 +142,15 @@ body header div.title {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+body header div.title h1 {
+  font-size: 28px;
+}
+
+body header div.title h2 {
+  font-size: 15px;
+  color: #898fb3;
 }
 
 body header div.theme {
@@ -182,6 +197,11 @@ body header div.theme button div.right {
   border-radius: 50%;
 }
 
+body header div.theme p {
+  font-weight: 500;
+  color: #898fb3;
+}
+
 body div.main-one {
   width: 80vw;
   height: 25vh;
@@ -193,7 +213,6 @@ body div.main-one {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 20px;
 }
 
 body div.main-one div.social {
@@ -211,6 +230,23 @@ body div.main-one div.social {
       -ms-flex-pack: center;
           justify-content: center;
   width: 18vw;
+}
+
+body div.main-one div.social h2 {
+  font-size: 14px;
+  font-weight: 300;
+  color: #898fb3;
+}
+
+body div.main-one div.social h1:nth-child(2) {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+body div.main-one div.social h1:nth-child(3) {
+  font-weight: 300;
+  font-size: 16px;
+  color: #898fb3;
 }
 
 body div.main-two {
