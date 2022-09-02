@@ -10,34 +10,34 @@
     font-family: inherit;
     text-decoration: none;
   }
-  
+
   ol,
   ul,
   li {
     list-style: none;
     display: block;
   }
-  
+
   table {
     border-collapse: collapse;
     border-spacing: 0;
   }
-  
+
   a,
   img {
     border: none;
   }
-  
+
   button,
   a {
     cursor: pointer;
     color: inherit;
   }
-  
+
   textarea {
     resize: none;
   }
-  
+
   button,
   input,
   textarea,
@@ -47,7 +47,7 @@
     /* safari, opera, chrome miatt */
     border-radius: 0;
   }
-  
+
   /* CSS reset */
 
 
@@ -62,7 +62,7 @@
     overflow: hidden;
 
     background-color: #20222f;
-    color: rgb(244, 237, 237);   
+    color: rgb(244, 237, 237);
 
     div.social {
       background-color: #252b43;
@@ -92,7 +92,7 @@
       background-color: rgb(234, 224, 224);
     }
   }
-  
+
 
   body {
       font-family: 'Heebo', sans-serif;
@@ -105,12 +105,12 @@
         height: 80px;
 
         // padding-bottom: -20px;
-    
+
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-  
-        
+
+
         div.title {
             display: flex;
             // flex-wrap: wrap;
@@ -126,20 +126,20 @@
               color: #898fb3;
             }
         }
-    
+
         div.theme {
             display: flex;
             justify-content: flex-end;
             flex-wrap: wrap;
             align-items: center;
-    
+
             button {
                 position: relative;
                 width: 60px;
                 height: 31px;
 
                 margin-left: 10px;
-      
+
                 background-color: #3cbca9;
                 border-radius: 50px;
 
@@ -179,22 +179,23 @@
       div.main-one {
         width: 80vw;
         height: 25vh;
-        
+
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         // gap: 20px;
-        
+
         div.social {
             position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-    
+
             width: 18vw;
+            padding: 20px 0 20px 0;
             border-radius: 8px;
-            
+
             .twitter, .facebook, .instagram, .youtube {
               position: absolute;
               top: 0;
@@ -214,7 +215,7 @@
               background: -moz-linear-gradient(90deg, rgba(254,218,117,1) 0%, rgba(250,126,30,1) 60%, rgba(214,41,118,1) 100%);
               background: -webkit-linear-gradient(90deg, rgba(254,218,117,1) 0%, rgba(250,126,30,1) 60%, rgba(214,41,118,1) 100%);
               background: linear-gradient(90deg, rgba(254,218,117,1) 0%, rgba(250,126,30,1) 60%, rgba(214,41,118,1) 100%);
-              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#feda75",endColorstr="#d62976",GradientType=1); 
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#feda75",endColorstr="#d62976",GradientType=1);
             }
             .youtube {
               background-color: #bd052a;
@@ -224,15 +225,23 @@
               font-size: 14px;
               font-weight: 400;
               color: #898fb3;
+
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-wrap: wrap;
+              width: 80%;
+
+              margin-top: 10px;
             }
-            h1:nth-child(4) {
+            h1:nth-child(3) {
               height: 80px;
               font-size: 60px;
               font-family: 'Mukta Mahee', sans-serif;
               font-weight: 700;
               // letter-spacing: 0.1em;
             }
-            h1:nth-child(5) {
+            h1:nth-child(4) {
               font-weight: 300;
               font-size: 15px;
               color: #898fb3;
@@ -242,6 +251,7 @@
             h3 {
               margin-top: 20px;
               font-size: 15px;
+
             }
 
             h3.green {
@@ -250,17 +260,27 @@
             h3.red {
               color: #b0455c;
             }
+            span.icons {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-wrap: wrap;
 
-            // span.icons svg {
-            //   width: 70px;
-            //   height: 70px;
-            // }
+              width: 25%;
+              height: 30px;
+              
+            }
+            span.icons svg {
+              width: 30px;
+              height: 30px;
+              text-align: center;
+            }
 
           }
       }
       div.overview {
         margin-top: 50px;
-        
+
         h2 {
           margin-bottom: 20px;
         }
@@ -268,22 +288,22 @@
         div.main-two {
           width: 80vw;
           height: 20vh;
-          
+
           display: flex;
           justify-content: space-between;
           flex-wrap: wrap;
           gap: 20px;
-  
+
           // h2 {
           //   position: absolute;
           // }
-  
+
           div.over {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-  
+
             width: 18vw;
             border-radius: 8px;
           }

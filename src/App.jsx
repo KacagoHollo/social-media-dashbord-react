@@ -26,7 +26,7 @@ function App() {
       <header>
         <div className='title'>
           <h1>Social Media Dashboard</h1>
-          <h2>Total followers: {sumTotal}</h2>
+          <h2>Total followers: {sumTotal.toLocaleString()}</h2>
         </div>
         <div className='theme'>
           <p>{toggle === "dark" ? "Dark Mode" : "Light Mode"}</p>
