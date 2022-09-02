@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import smIcons from '../data/smicons';
 
 function Social({platform}) {
   const platName = (Object.keys(platform)[0]);
@@ -8,6 +9,7 @@ function Social({platform}) {
         {Object.values(platform).map((profile, i) => (
           <div className='social' key={i}>
             <div className={platName}></div>
+            <span className='icons'>{smIcons[platName]}</span>
             <h2>{platName === "youtube" ? profile.name : "@" + profile.name}</h2>
             <h1>{profile.followers}</h1>
             <h1>{platName === "youtube" ? "SUBSCRIBERS" : "FOLLOWERS"}</h1>
