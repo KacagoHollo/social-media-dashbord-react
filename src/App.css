@@ -101,11 +101,11 @@ div.light {
 }
 
 div.light div.social {
-  background-color: #eae0e0;
+  background-color: #ebdddd;
 }
 
 div.light div.over {
-  background-color: #eae0e0;
+  background-color: #ebdddd;
 }
 
 body {
@@ -319,7 +319,7 @@ body div.main-one div.social span.icons {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 25%;
+  width: 18%;
   height: 30px;
 }
 

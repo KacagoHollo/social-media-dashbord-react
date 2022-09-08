@@ -86,10 +86,10 @@
     color: #20222f;
 
     div.social {
-      background-color: rgb(234, 224, 224);
+      background-color: rgb(235, 221, 221);
     }
     div.over {
-      background-color: rgb(234, 224, 224);
+      background-color: rgb(235, 221, 221);
     }
   }
 
@@ -251,7 +251,6 @@
             h3 {
               margin-top: 20px;
               font-size: 15px;
-
             }
 
             h3.green {
@@ -260,13 +259,14 @@
             h3.red {
               color: #b0455c;
             }
+
             span.icons {
               display: flex;
               align-items: center;
               justify-content: center;
               flex-wrap: wrap;
 
-              width: 25%;
+              width: 18%;
               height: 30px;
               
             }
