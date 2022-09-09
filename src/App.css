@@ -395,6 +395,11 @@ body div.overview div.main-two div.over p {
   font-weight: 700;
 }
 
+body div.overview div.main-two div.over p svg {
+  position: absolute;
+  left: -20px;
+}
+
 body div.overview div.main-two div.over p.green {
   color: #46938c;
 }

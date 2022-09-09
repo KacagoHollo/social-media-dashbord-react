@@ -18,7 +18,7 @@ function Overview({event}) {
             <h1><span className='icons'>{smIcons[platName]}</span></h1>
             <h2 className='type'>{event.type}</h2>
             <h2 className='amount'>{event.amount}</h2>
-            <p className={event.modifier > 0 ? "green" : "red"}>{event.modifier + "%"}</p>
+            <p style={{ display: 'flex', alignItems: 'center' }} className={event.modifier > 0 ? "green" : "red"}>{event.modifier > 0 ? <ArrowDropUpIcon  style={{ color: "#46938c" }}></ArrowDropUpIcon> : <ArrowDropDownIcon style={{ color: "#b0455c" }}></ArrowDropDownIcon>}{Math.abs(event.modifier) + "%"}</p>
         </div>
     </>
   )

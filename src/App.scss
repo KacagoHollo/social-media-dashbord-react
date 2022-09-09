@@ -330,6 +330,11 @@
 
               font-size: 15px;
               font-weight: 700;
+
+              svg {
+                position: absolute;
+                left: -20px;
+              }
             }
 
             p.green {
