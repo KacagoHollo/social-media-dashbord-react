@@ -239,7 +239,6 @@
               font-size: 60px;
               font-family: 'Mukta Mahee', sans-serif;
               font-weight: 700;
-              // letter-spacing: 0.1em;
             }
             h1:nth-child(4) {
               font-weight: 300;
@@ -294,11 +293,8 @@
           flex-wrap: wrap;
           gap: 20px;
 
-          // h2 {
-          //   position: absolute;
-          // }
-
           div.over {
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -306,6 +302,63 @@
 
             width: 18vw;
             border-radius: 8px;
+
+            padding-bottom: 100px;
+
+            h2.type {
+              position: absolute;
+              top: 30px;
+              left: 30px;
+
+
+              font-size: 16px;
+              font-weight: 700;
+              color: #898fb3;
+            }
+
+            h2.amount {
+              position: absolute;
+              bottom: 0px;
+              left: 30px;
+
+              font-size: 30px;
+            }
+
+            p {
+              position: absolute;
+              bottom: 30px;
+              right: 30px;
+            }
+
+            h1 {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              flex-wrap: wrap;
+
+              width: 100%;
+
+              margin-top: 10px;
+
+              span.icons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+  
+                width: 18%;
+                height: 30px;
+
+                transform: translate(-30%, 30%);
+                
+              }
+              span.icons svg {
+                width: 30px;
+                height: 30px;
+                text-align: center;
+              }
+            }
+            
           }
         }
 

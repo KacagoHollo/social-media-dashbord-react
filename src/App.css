@@ -352,6 +352,7 @@ body div.overview div.main-two {
 }
 
 body div.overview div.main-two div.over {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,5 +368,68 @@ body div.overview div.main-two div.over {
           justify-content: center;
   width: 18vw;
   border-radius: 8px;
+  padding-bottom: 100px;
+}
+
+body div.overview div.main-two div.over h2.type {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #898fb3;
+}
+
+body div.overview div.main-two div.over h2.amount {
+  position: absolute;
+  bottom: 0px;
+  left: 30px;
+  font-size: 30px;
+}
+
+body div.overview div.main-two div.over p {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+body div.overview div.main-two div.over h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10px;
+}
+
+body div.overview div.main-two div.over h1 span.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 18%;
+  height: 30px;
+  -webkit-transform: translate(-30%, 30%);
+          transform: translate(-30%, 30%);
+}
+
+body div.overview div.main-two div.over h1 span.icons svg {
+  width: 30px;
+  height: 30px;
+  text-align: center;
 }
 /*# sourceMappingURL=App.css.map */
