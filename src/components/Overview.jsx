@@ -17,7 +17,7 @@ function Overview({event}) {
         <div className='over'>
             <h1><span className='icons'>{smIcons[platName]}</span></h1>
             <h2 className='type'>{event.type}</h2>
-            <h2 className='amount'>{event.amount}</h2>
+            <h2 className='amount'>{event.amount >= 1e4 ? (event.amount / 1e3).toFixed(0) + "k" : event.amount}</h2>
             <p style={{ display: 'flex', alignItems: 'center' }} className={event.modifier > 0 ? "green" : "red"}>{event.modifier > 0 ? <ArrowDropUpIcon  style={{ color: "#46938c" }}></ArrowDropUpIcon> : <ArrowDropDownIcon style={{ color: "#b0455c" }}></ArrowDropDownIcon>}{Math.abs(event.modifier) + "%"}</p>
         </div>
     </>
