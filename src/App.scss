@@ -224,11 +224,11 @@
               font-weight: 400;
               color: #898fb3;
 
-              display: flex;
+              display: inline-flex;
               align-items: center;
               justify-content: center;
-              flex-wrap: wrap;
-              width: 80%;
+              flex-wrap: nowrap;
+              width: 100%;
               gap: 5px;
 
               margin-top: 10px;
@@ -250,6 +250,8 @@
               margin-top: 20px;
               font-size: 15px;
               margin-left: -10px;
+              text-align: center;
+
             }
 
             h3.green {
@@ -265,7 +267,7 @@
               justify-content: center;
               flex-wrap: wrap;
 
-              width: 18%;
+              width: 20%;
               height: 30px;
               
             }
@@ -383,7 +385,7 @@
   @media only screen and (max-width: 1080px) {
     div.over {
       h2.type, h2.amount, p {
-        transform: scale(80%);
+        transform: scale(85%);
       }
       
     }
@@ -416,8 +418,17 @@
   @media only screen and (max-width: 750px) {
     div.main-one {
       div.social {
-        span.icons {
-          margin-left: -20px;
+        h2 {
+          align-self: flex-start;
+          margin-left: 10px;
+          width: 100vw;
+          span.icons {
+            flex-wrap: nowrap;
+            margin-left: -20px;
+            width: 30%;
+            flex-wrap: nowrap;
+            
+          }
         }
         h1:nth-child(3) {
           transform: scale(90%);
@@ -444,9 +455,105 @@
         h2.amount {
           margin-bottom: 45px;
         }
-        svg {
-          margin-top: 10px;
+        h1 {
+          span.icons {
+            svg {
+              margin-top: 10px;
+            }
+          }
         }
       }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    div.main-one {
+      div.social {
+        h1:nth-child(3), h1:nth-child(4), h2, h3 {
+          transform: scale(75%);
+        }
+      }
+    }
+  }  
+
+  @media only screen and (max-width: 550px) {
+    div.main-one {
+      div.social {
+        h1:nth-child(3), h1:nth-child(4), h2 {
+          transform: scale(65%);
+        }
+        h3 {
+          transform: scale(70%);
+          padding: 0 15px 0 15px;
+        } 
+      }
+    }
+    button {
+      transform: scale(80%);
+    }
+  }  
+
+  @media only screen and (max-width: 475px) {
+    div.main-one {
+      div.social {
+        h1:nth-child(3), h1:nth-child(4), h2 {
+          transform: scale(55%);
+        }
+        h3 {
+          transform: scale(60%);
+        } 
+      }
+    }
+    div.main-two {
+      div.over {
+        h2.type, h2.amount, p, svg {
+          transform: scale(70%);
+
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    div.main-one {
+      div.social {
+        h1:nth-child(3), h1:nth-child(4), h2 {
+          transform: scale(50%);
+        }
+        h3 {
+          transform: scale(55%);
+        } 
+      }
+    }
+  }
+
+  @media only screen and (max-width: 390px) {
+    header, div.title, div.theme {
+      transform: scale(90%);
+    }
+    header {
+      width: 100vw !important;
+    }
+    div.theme {
+      transform: translate(50%, 50%);
+    }
+    div.main-one {
+      margin-top: 40px !important;
+      div.social {
+        padding: 0 !important;
+        h1:nth-child(3), h1:nth-child(4), h2 {
+          transform: scale(45%);
+        }
+      }
+    }
+    div.overview {
+      margin-top: 40px !important;
+      h2 {
+        transform: scale(90%);
+      }
+    }
+    button {
+      transform: scale(70%);
+
     }
   }

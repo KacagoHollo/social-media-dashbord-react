@@ -265,18 +265,18 @@ body div.main-one div.social h2 {
   font-size: 14px;
   font-weight: 400;
   color: #898fb3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 80%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
   gap: 5px;
   margin-top: 10px;
 }
@@ -299,6 +299,7 @@ body div.main-one div.social h3 {
   margin-top: 20px;
   font-size: 15px;
   margin-left: -10px;
+  text-align: center;
 }
 
 body div.main-one div.social h3.green {
@@ -321,7 +322,7 @@ body div.main-one div.social span.icons {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 18%;
+  width: 20%;
   height: 30px;
 }
 
@@ -451,8 +452,8 @@ body div.overview div.main-two div.over h1 span.icons svg {
 
 @media only screen and (max-width: 1080px) {
   div.over h2.type, div.over h2.amount, div.over p {
-    -webkit-transform: scale(80%);
-            transform: scale(80%);
+    -webkit-transform: scale(85%);
+            transform: scale(85%);
   }
 }
 
@@ -478,8 +479,18 @@ body div.overview div.main-two div.over h1 span.icons svg {
 }
 
 @media only screen and (max-width: 750px) {
-  div.main-one div.social span.icons {
+  div.main-one div.social h2 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 10px;
+    width: 100vw;
+  }
+  div.main-one div.social h2 span.icons {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     margin-left: -20px;
+    width: 30%;
+    flex-wrap: nowrap;
   }
   div.main-one div.social h1:nth-child(3) {
     -webkit-transform: scale(90%);
@@ -506,8 +517,92 @@ body div.overview div.main-two div.over h1 span.icons svg {
   div.main-two div.over h2.amount {
     margin-bottom: 45px;
   }
-  div.main-two div.over svg {
+  div.main-two div.over h1 span.icons svg {
     margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div.main-one div.social h1:nth-child(3), div.main-one div.social h1:nth-child(4), div.main-one div.social h2, div.main-one div.social h3 {
+    -webkit-transform: scale(75%);
+            transform: scale(75%);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  div.main-one div.social h1:nth-child(3), div.main-one div.social h1:nth-child(4), div.main-one div.social h2 {
+    -webkit-transform: scale(65%);
+            transform: scale(65%);
+  }
+  div.main-one div.social h3 {
+    -webkit-transform: scale(70%);
+            transform: scale(70%);
+    padding: 0 15px 0 15px;
+  }
+  button {
+    -webkit-transform: scale(80%);
+            transform: scale(80%);
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  div.main-one div.social h1:nth-child(3), div.main-one div.social h1:nth-child(4), div.main-one div.social h2 {
+    -webkit-transform: scale(55%);
+            transform: scale(55%);
+  }
+  div.main-one div.social h3 {
+    -webkit-transform: scale(60%);
+            transform: scale(60%);
+  }
+  div.main-two div.over h2.type, div.main-two div.over h2.amount, div.main-two div.over p, div.main-two div.over svg {
+    -webkit-transform: scale(70%);
+            transform: scale(70%);
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  div.main-one div.social h1:nth-child(3), div.main-one div.social h1:nth-child(4), div.main-one div.social h2 {
+    -webkit-transform: scale(50%);
+            transform: scale(50%);
+  }
+  div.main-one div.social h3 {
+    -webkit-transform: scale(55%);
+            transform: scale(55%);
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  header, div.title, div.theme {
+    -webkit-transform: scale(90%);
+            transform: scale(90%);
+  }
+  header {
+    width: 100vw !important;
+  }
+  div.theme {
+    -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
+  }
+  div.main-one {
+    margin-top: 40px !important;
+  }
+  div.main-one div.social {
+    padding: 0 !important;
+  }
+  div.main-one div.social h1:nth-child(3), div.main-one div.social h1:nth-child(4), div.main-one div.social h2 {
+    -webkit-transform: scale(45%);
+            transform: scale(45%);
+  }
+  div.overview {
+    margin-top: 40px !important;
+  }
+  div.overview h2 {
+    -webkit-transform: scale(90%);
+            transform: scale(90%);
+  }
+  button {
+    -webkit-transform: scale(70%);
+            transform: scale(70%);
   }
 }
 /*# sourceMappingURL=App.css.map */
