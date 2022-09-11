@@ -67,7 +67,7 @@ div.dark {
   width: 100vw;
   height: 100vh;
   overflow: scroll;
-  background-color: #20222f;
+  background-color: #1d2029;
   color: #f4eded;
 }
 
@@ -114,16 +114,18 @@ body {
 }
 
 body header {
-  position: absolute;
-  top: 40px;
-  width: 80vw;
-  height: 80px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 100;
+  background-color: #20222f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -384,9 +386,11 @@ body div.overview div.main-two div.over h2.type {
 }
 
 body div.overview div.main-two div.over h2.amount {
+  width: 100%;
   position: absolute;
-  bottom: 0px;
-  left: 30px;
+  bottom: 30px;
+  left: 0px;
+  text-align: center;
   font-size: 30px;
 }
 
@@ -394,6 +398,7 @@ body div.overview div.main-two div.over p {
   position: absolute;
   bottom: 25px;
   right: 30px;
+  text-align: center;
   font-size: 15px;
   font-weight: 700;
 }
@@ -461,9 +466,6 @@ body div.overview div.main-two div.over h1 span.icons svg {
   div.main-two div.over {
     margin: 0 -10px 0 -10px;
   }
-  div.main-two div.over h2.amount {
-    margin-left: -20px;
-  }
   div.main-two div.over h2.type {
     margin-left: -20px;
   }
@@ -479,6 +481,9 @@ body div.overview div.main-two div.over h1 span.icons svg {
 }
 
 @media only screen and (max-width: 750px) {
+  div.main-one div.social {
+    text-align: center !important;
+  }
   div.main-one div.social h2 {
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -514,9 +519,6 @@ body div.overview div.main-two div.over h1 span.icons svg {
     margin-left: -25px;
     margin-top: -20px;
   }
-  div.main-two div.over h2.amount {
-    margin-bottom: 45px;
-  }
   div.main-two div.over h1 span.icons svg {
     margin-top: 10px;
   }
@@ -534,6 +536,10 @@ body div.overview div.main-two div.over h1 span.icons svg {
     -webkit-transform: scale(65%);
             transform: scale(65%);
   }
+  div.main-one div.social h2 svg {
+    -webkit-transform: scale(110%);
+            transform: scale(110%);
+  }
   div.main-one div.social h3 {
     -webkit-transform: scale(70%);
             transform: scale(70%);
@@ -543,12 +549,28 @@ body div.overview div.main-two div.over h1 span.icons svg {
     -webkit-transform: scale(80%);
             transform: scale(80%);
   }
+  div.main-two div.over h1 span.icons svg {
+    -webkit-transform: scale(70%);
+            transform: scale(70%);
+  }
+  div.main-two div.over p {
+    right: 20px !important;
+    margin-right: -20px !important;
+  }
 }
 
 @media only screen and (max-width: 475px) {
   div.main-one div.social h1:nth-child(3), div.main-one div.social h1:nth-child(4), div.main-one div.social h2 {
     -webkit-transform: scale(55%);
             transform: scale(55%);
+  }
+  div.main-one div.social h2 svg {
+    -webkit-transform: scale(130%);
+            transform: scale(130%);
+  }
+  div.main-one div.social h1:nth-child(4) {
+    margin-top: -10px !important;
+    margin-bottom: -10px !important;
   }
   div.main-one div.social h3 {
     -webkit-transform: scale(60%);
@@ -562,8 +584,8 @@ body div.overview div.main-two div.over h1 span.icons svg {
 
 @media only screen and (max-width: 420px) {
   div.main-one div.social svg {
-    -webkit-transform: scale(130%);
-            transform: scale(130%);
+    -webkit-transform: scale(150%) !important;
+            transform: scale(150%) !important;
   }
   div.main-one div.social h1:nth-child(3), div.main-one div.social h1:nth-child(4), div.main-one div.social h2 {
     -webkit-transform: scale(50%);
@@ -575,6 +597,8 @@ body div.overview div.main-two div.over h1 span.icons svg {
   }
   div.main-two div.over {
     padding-bottom: 90px !important;
+    -ms-flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important;
   }
   div.main-two div.over h2.type {
     -webkit-transform: scale(50%);
@@ -583,8 +607,9 @@ body div.overview div.main-two div.over h1 span.icons svg {
     left: 25px !important;
   }
   div.main-two div.over h2.amount {
-    -webkit-transform: scale(60%);
-            transform: scale(60%);
+    -webkit-transform: scale(60%) !important;
+            transform: scale(60%) !important;
+    bottom: 20px !important;
   }
   div.main-two div.over svg {
     -webkit-transform: scale(50%);
@@ -596,19 +621,19 @@ body div.overview div.main-two div.over h1 span.icons svg {
 }
 
 @media only screen and (max-width: 390px) {
-  header, div.title, div.theme {
+  div.title, div.theme {
     -webkit-transform: scale(90%);
             transform: scale(90%);
   }
   header {
-    width: 100vw !important;
+    height: 120%;
   }
   div.theme {
-    -webkit-transform: translate(50%, 50%);
-            transform: translate(50%, 50%);
+    -webkit-transform: translate(50%, 10%);
+            transform: translate(50%, 10%);
   }
   div.main-one {
-    margin-top: 40px !important;
+    margin-top: 10px !important;
   }
   div.main-one div.social {
     padding: 0 !important;
@@ -616,6 +641,10 @@ body div.overview div.main-two div.over h1 span.icons svg {
   div.main-one div.social h1:nth-child(3), div.main-one div.social h1:nth-child(4), div.main-one div.social h2 {
     -webkit-transform: scale(45%);
             transform: scale(45%);
+  }
+  div.main-one div.social svg {
+    -webkit-transform: scale(170%) !important;
+            transform: scale(170%) !important;
   }
   div.overview {
     margin-top: 40px !important;
