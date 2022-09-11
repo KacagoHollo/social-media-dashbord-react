@@ -66,7 +66,7 @@ div.dark {
           justify-content: center;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
   background-color: #20222f;
   color: #f4eded;
 }
@@ -95,7 +95,7 @@ div.light {
           align-items: center;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
   background-color: #f4eded;
   color: #20222f;
 }
@@ -561,6 +561,10 @@ body div.overview div.main-two div.over h1 span.icons svg {
 }
 
 @media only screen and (max-width: 420px) {
+  div.main-one div.social svg {
+    -webkit-transform: scale(130%);
+            transform: scale(130%);
+  }
   div.main-one div.social h1:nth-child(3), div.main-one div.social h1:nth-child(4), div.main-one div.social h2 {
     -webkit-transform: scale(50%);
             transform: scale(50%);
@@ -568,6 +572,26 @@ body div.overview div.main-two div.over h1 span.icons svg {
   div.main-one div.social h3 {
     -webkit-transform: scale(55%);
             transform: scale(55%);
+  }
+  div.main-two div.over {
+    padding-bottom: 90px !important;
+  }
+  div.main-two div.over h2.type {
+    -webkit-transform: scale(50%);
+            transform: scale(50%);
+    top: 25px !important;
+    left: 25px !important;
+  }
+  div.main-two div.over h2.amount {
+    -webkit-transform: scale(60%);
+            transform: scale(60%);
+  }
+  div.main-two div.over svg {
+    -webkit-transform: scale(50%);
+            transform: scale(50%);
+  }
+  div.overview {
+    margin-top: 50px !important;
   }
 }
 
@@ -603,6 +627,10 @@ body div.overview div.main-two div.over h1 span.icons svg {
   button {
     -webkit-transform: scale(70%);
             transform: scale(70%);
+  }
+  div.main-two div.over svg {
+    -webkit-transform: scale(40%);
+            transform: scale(40%);
   }
 }
 /*# sourceMappingURL=App.css.map */

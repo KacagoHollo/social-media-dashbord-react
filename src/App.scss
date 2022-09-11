@@ -59,7 +59,7 @@
     width: 100vw;
     height: 100vh;
 
-    overflow: hidden;
+    overflow: scroll;
 
     background-color: #20222f;
     color: rgb(244, 237, 237);
@@ -80,7 +80,7 @@
     width: 100vw;
     height: 100vh;
 
-    overflow: hidden;
+    overflow: scroll;
 
     background-color: rgb(244, 237, 237);
     color: #20222f;
@@ -517,6 +517,9 @@
   @media only screen and (max-width: 420px) {
     div.main-one {
       div.social {
+        svg {
+          transform: scale(130%);
+        }
         h1:nth-child(3), h1:nth-child(4), h2 {
           transform: scale(50%);
         }
@@ -524,6 +527,25 @@
           transform: scale(55%);
         } 
       }
+    }
+    div.main-two {
+      div.over {
+        padding-bottom: 90px !important;
+        h2.type {
+          transform: scale(50%);
+          top: 25px !important;
+          left: 25px !important;
+        }
+        h2.amount {
+          transform: scale(60%);
+        }
+        svg {
+          transform: scale(50%);
+        }
+      }
+    }
+    div.overview {
+      margin-top: 50px !important;
     }
   }
 
@@ -555,5 +577,12 @@
     button {
       transform: scale(70%);
 
+    }
+    div.main-two {
+      div.over {
+        svg {
+          transform: scale(40%);
+        }
+      }
     }
   }
