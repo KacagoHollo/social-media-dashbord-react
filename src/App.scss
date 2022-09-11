@@ -63,7 +63,9 @@
 
     background-color: #1d2029;
     color: rgb(244, 237, 237);
-
+    header {
+      background-color: #20222f;
+    }
     div.social {
       background-color: #252b43;
     }
@@ -84,7 +86,9 @@
 
     background-color: rgb(244, 237, 237);
     color: #20222f;
-
+    header {
+      background-color: rgb(249, 244, 244);
+    }
     div.social {
       background-color: rgb(235, 221, 221);
     }
@@ -102,11 +106,8 @@
         top: 0px;
         left: 0;
         width: 100%;
-        height: 150px;
+        height: 100px;
         z-index: 100;
-        background-color: #20222f;
-
-        // padding-bottom: -20px;
 
         display: flex;
         justify-content: space-around;
@@ -184,6 +185,8 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        margin-top: 100px;
 
         div.social {
             position: relative;
@@ -419,6 +422,7 @@
   
   @media only screen and (max-width: 750px) {
     div.main-one {
+      margin-top: 50px !important;
       div.social {
         text-align: center !important;
         h2 {
@@ -478,6 +482,7 @@
 
   @media only screen and (max-width: 550px) {
     div.main-one {
+      margin-top: 30px !important;
       div.social {
         h1:nth-child(3), h1:nth-child(4), h2 {
           transform: scale(65%);
@@ -577,17 +582,14 @@
   }
 
   @media only screen and (max-width: 390px) {
-    div.title, div.theme {
+    header, div.title, div.theme {
       transform: scale(90%);
-    }
-    header {
-      height: 120%;
     }
     div.theme {
       transform: translate(50%, 10%);
     }
     div.main-one {
-      margin-top: 10px !important;
+      margin-top: 20px !important;
       div.social {
         padding: 0 !important;
         h1:nth-child(3), h1:nth-child(4), h2 {
