@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/social-media-dashbord-react/static/css/main.8ce33017.css",
+    "main.css": "/social-media-dashbord-react/static/css/main.bde02aae.css",
     "main.js": "/social-media-dashbord-react/static/js/main.cf3dbdc0.js",
     "index.html": "/social-media-dashbord-react/index.html",
-    "main.8ce33017.css.map": "/social-media-dashbord-react/static/css/main.8ce33017.css.map",
+    "main.bde02aae.css.map": "/social-media-dashbord-react/static/css/main.bde02aae.css.map",
     "main.cf3dbdc0.js.map": "/social-media-dashbord-react/static/js/main.cf3dbdc0.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ce33017.css",
+    "static/css/main.bde02aae.css",
     "static/js/main.cf3dbdc0.js"
   ]
 }
